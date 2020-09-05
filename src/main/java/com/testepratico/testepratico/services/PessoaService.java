@@ -33,7 +33,7 @@ public class PessoaService {
     }
 
     public Pessoa createUser(Pessoa pessoa) {
-        repository.save(new Pessoa("Teste","123456"));
+        repository.save(new Pessoa(pessoa.getNome(), pessoa.getCpf()));
         return pessoa;
     }
 
